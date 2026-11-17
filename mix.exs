@@ -24,7 +24,11 @@ defmodule FlatrateMath.MixProject do
     [extra_applications: []]
   end
 
-  defp deps, do: []
+  defp deps do
+    [
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
+    ]
+  end
 
   defp description do
     "Pricing math for flat-rate software development subscriptions: published " <>
